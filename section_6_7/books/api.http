@@ -1,2 +1,29 @@
+# Lấy toàn bộ sách
 GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Tạo một cuốn sách mới
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Harry Potter"
+}
+
+###
+
+# Cập nhật sách (Thay số 1 bằng ID thực tế)
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Dark Tower"
+}
+
+###
+
+# Xóa sách (Thay số 1 bằng ID thực tế)
+DELETE http://localhost:3001/books/1 HTTP/1.1
 Content-Type: application/json
